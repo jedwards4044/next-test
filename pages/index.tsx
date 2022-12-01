@@ -9,7 +9,7 @@ import { Renderer } from '../components/Renderer'
 import { getDomain, domainImage } from '../functions'
 import { useRouter } from 'next/router'
 
-//runs at build time just like static props
+//runs at build time just like static props (test)
 
 //const domain = encodeURI('localhost:3000')
 /* const domain = encodeURI(process.env.NEXT_PUBLIC_BASE_URL + '')*/

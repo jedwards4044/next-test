@@ -93,7 +93,7 @@ const List = (props: ListProps) => {
                     {modLayout != 'card' ? (
                         <div className={styles.allText}>
                             <div className={styles.title} style={headingColor}>
-                                <h3 className={styles.text}>{headline}</h3>
+                                <h2 className={styles.text}>{headline}</h2>
                             </div>
                             <div className={styles.textBlock}>
                                 <div className={styles.text}>{Parser(body)}</div>

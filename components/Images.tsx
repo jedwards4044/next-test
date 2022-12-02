@@ -91,6 +91,7 @@ const ImagesPlus = ({ items, modLayout = '4-plus', gap = false }: ImagesProps) =
 }
 
 const TileImage = ({ itemNumber, modLayout, isMainImage = false, hero = false }: TileImageProps) => {
+    const noLink = !(itemNumber.headline || itemNumber.linkText || itemNumber.body)
     return (
         <div
             className={cn(styles.tileImage, {
@@ -117,7 +118,7 @@ const TileImage = ({ itemNumber, modLayout, isMainImage = false, hero = false }:
                     />
 
                     <Link href={itemNumber.linkUrl}>
-                        <a className={styles.link}>
+                        <a className={styles.link} aria-label={styles.headline || 'image link'}>
                             {itemNumber.headline ? (
                                 <div className={styles.headline}>
                                     <h2>{itemNumber.headline || ''}</h2>
